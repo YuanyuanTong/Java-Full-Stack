@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Cuisine</title>
+    <style>
+        .content {
+            margin: 20px;
+        }
+
+        table caption {
+            text-align: center;
+        }
+
+        h3 {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <table id="tb01" class="table table-bordered" style="width:100%">
+            <caption>Eight Great Cuisines of China</caption>
+            <tr>
+                <th>Cuisine</th>
+                <th>Chinese Name</th>
+                <th>Features</th>
+            </tr>
+            <tr>
+                <td>Cantonese Cuisine</th>
+                <td>粤菜 Yuècài</td>
+                <td>Sweeter, favoring braising and stewing, adding various mild sauces.</td>
+            </tr>
+            <tr>
+                <td>Sichuan Cuisine</th>
+                <td>川菜 Chuāncài</td>
+                <td>Spicy and bold, often mouth-numbing, using lots of chili, garlic, ginger, and peanuts.</td>
+            </tr>
+            <tr>
+                <td>Zhejiang Cuisine</th>
+                <td>浙菜 Zhècài</td>
+                <td>Mellow, using fresh seafood, freshwater fish, and bamboo shoots, and a wide variety of cooking
+                    methods.</td>
+            </tr>
+            <tr>
+                <td>Jiangsu Cuisine</th>
+                <td>苏菜 Sūcài</td>
+                <td>Fresh, moderately salty and sweet, precise cooking techniques, favoring seafood, soups and artistic,
+                    colorful presentation</td>
+            </tr>
+            <tr>
+                <td>Fujian/Min Cuisine</th>
+                <td>闽菜 Mǐncài</td>
+                <td>Lighter, with a mild sweet and sour taste, using ingredients from the sea and the mountains.</td>
+            </tr>
+            <tr>
+                <td>Hunan Cuisine</th>
+                <td>湘菜 Xiāngcài</td>
+                <td>Uses many wild plants and animals as ingredients, favoring stewing and more oil.</td>
+            </tr>
+            <tr>
+                <td>Anhui Cuisine</th>
+                <td>徽菜 Huīcài</td>
+                <td>Sweeter, favoring braising and stewing, adding various mild sauces.</td>
+            </tr>
+            <tr>
+                <td>Shandong Cuisine</th>
+                <td>鲁菜 Lǔcài</td>
+                <td>Salty and crispy, favoring braising and seafood.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        var colors = ['#ffb366', '#ffd966', '#ffff66', '#d9ff66', '#8cff66', '#66ff66', '#66ff8c', '#66ffb3', '#66ffd9', '#66ffff'];
+        $.each(colors, function (index, val) {
+            for (var i = 1; i < index + 1; i++) {
+                $("table tr:nth-child("+index+")" ).css("background-color", val);
+            }
+        });
+
+    });
+</script>
+
+</html>
