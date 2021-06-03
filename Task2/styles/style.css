@@ -27,10 +27,6 @@ body, html {
   color: white;
 }
 
-iframe[name="cuisine"] {
- float: right;
-}
-
 footer {
   text-align: center;
 }
